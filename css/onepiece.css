@@ -102,5 +102,12 @@ tr:first-child td:first-child{
     width: 95%;
     /* left: -20%; */
     padding: 7%;
-    
+}
+
+#img1{
+    opacity: 1;
+}
+
+#img1:hover{
+    opacity: 0.6;
 }
