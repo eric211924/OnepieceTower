@@ -1,0 +1,106 @@
+ body {
+     margin: 0px;
+     padding: 0px;
+     font-size: 0.85em;
+     font-weight: bold;
+     font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN',
+      'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+ }
+
+ div {
+     display: inline-block;
+ }
+
+ div>div {
+     width: 45%;
+     /* height: ; */
+ }
+
+ .demo {
+     /* background-color: #FF9933; */
+     width: 99%;
+     background-image: url("../img/bg_dot.jpg");
+ }
+
+ div[id^="reddiv"] {
+     background-color: cornflowerblue;
+     width: 50%;
+     position: fixed;
+     left: 0px;
+     top: -70px;
+ }
+
+ /* div[id^="greendiv"] {
+     background-color: #00FF00;
+     position: relative;
+ } */
+
+ div[id^="bluediv"] {
+     /* background-color: #0000FF; */
+     padding: 50px;
+     margin-left: 48%;
+     text-align: center;
+     height: 100%;
+     background-image: url("../img/bg_dot.jpg");
+     
+ }
+
+ #leftDiv {
+    text-align: left;
+    width: 80%;
+    margin: 30px 60px;
+}
+
+table{
+    margin: 00% 0% 0% 10%;
+    /* border: gainsboro solid 2px; */
+    width: 70%;
+    /* border-spacing: 1rem; */
+    border-collapse: separate;
+    border-spacing: 0;
+    
+}
+td{
+    border: gainsboro solid 1px;
+    width: 33%;
+   
+}
+
+tr{
+    height: 3rem;
+}
+
+tr:first-child{
+    background-color: lightskyblue;
+}
+
+td:nth-child(2){
+    width: 40%;
+}
+
+/*第一欄第一列：左上*/
+tr:first-child td:first-child{
+    border-top-left-radius: 20px;
+  }
+  /*第一欄最後列：左下*/
+  tr:last-child td:first-child{
+    border-bottom-left-radius: 20px;
+  }
+  /*最後欄第一列：右上*/
+  tr:first-child td:last-child{
+    border-top-right-radius:20px;
+  }
+  /*最後欄第一列：右下*/
+  tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+  }
+
+#divDown{
+    display: inline-block;
+    background-color: aliceblue;
+    /* height: 4rem; */
+    width: 95%;
+    /* left: -20%; */
+    padding: 7%;
+    
+}
